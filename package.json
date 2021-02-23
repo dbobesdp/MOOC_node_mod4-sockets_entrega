@@ -15,13 +15,14 @@
     "scripts": {
         "migrate": "sequelize db:migrate --url sqlite://$(pwd)/db.sqlite",
         "seed": "sequelize db:seed:all --url sqlite://$(pwd)/db.sqlite",
-        "migrate_win": "sequelize db:migrate --url sqlite://%cd%/db.sqlite",
-        "seed_win": "sequelize db:seed:all --url sqlite://%cd%/db.sqlite",
-        "start": "node main.js"
+        "migrate_win": "sequelize db:migrate --url sqlite:C:\\Users\\dbobe\\Desktop\\MOOC_node_mod4-sockets_entrega\\db.sqlite",
+        "seed_win": "sequelize db:seed:all --url sqlite:C:\\Users\\dbobe\\Desktop\\MOOC_node_mod4-sockets_entrega\\db.sqlite",
+        "start": "node main.js",
+        "dev": "nodemon main.js"
     },
     "dependencies": {
         "sequelize": "^5.21.3",
         "sequelize-cli": "^5.5.0",
-        "sqlite3": "^4.0.9"
+        "sqlite3": "^5.0.2"
     }
 }
